@@ -1,0 +1,17 @@
+n = int(input('Введите целое положительное число '))
+
+MaximalNumber = n % 10
+
+while n >= 1:
+    n = n // 10
+
+    if n % 10 > MaximalNumber:
+        MaximalNumber = n % 10
+
+    if n > 9:
+        continue
+
+    else:
+        print("Наибольшая цифра в числе ", MaximalNumber)
+
+        break
