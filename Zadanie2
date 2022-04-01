@@ -1,0 +1,9 @@
+time = int(input('Введите время в секундах '))
+
+hours = time // 3600
+# print(hours)
+minutes = time % 3600 // 60
+# print(minutes)
+seconds = time % 3600 % 60
+# print(seconds)
+print(f'{hours}:{minutes}:{seconds}')
