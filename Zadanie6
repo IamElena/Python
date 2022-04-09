@@ -1,0 +1,63 @@
+
+list = []
+
+
+nazvanie = input("Введите название товара: ")
+zena = int(input("Введите стоимость товара: "))
+kolichestvo = int(input("Введите количество: "))
+edin_izmereniya = input("В каких единицах измеряется продукт? ")
+
+Characteristics_1 = (1, {"название": nazvanie, "цена": zena, "количество": kolichestvo, "eд": edin_izmereniya})
+
+print(Characteristics_1)
+
+
+nazvanie_2 = input("Введите название второго товара: ")
+zena_2 = int(input("Введите стоимость второго товара: "))
+kolichestvo_2 = int(input("Введите количество второго товара: "))
+edin_izmereniya_2 = input("В каких единицах измеряется второй товар? ")
+
+Characteristics_2 = (2, {"название": nazvanie_2, "цена": zena_2, "количество": kolichestvo_2, "eд": kolichestvo_2})
+
+print(Characteristics_2)
+
+
+nazvanie_3 = input("Введите название третьего товара: ")
+zena_3 = int(input("Введите стоимость третьего товара: "))
+kolichestvo_3 = int(input("Введите количество третьего товара: "))
+edin_izmereniya_3 = input("В каких единицах измеряется третий товар? ")
+
+Characteristics_3 = (3, {"название": nazvanie_3, "цена": zena_3, "количество": kolichestvo_3, "eд": kolichestvo_3})
+
+print(Characteristics_3)
+
+
+list.extend(Characteristics_1)
+list.extend(Characteristics_2)
+list.extend(Characteristics_3)
+
+print(list)
+
+
+dict = {}
+
+dict_1 = {"название": [nazvanie, nazvanie_2, nazvanie_3]}
+dict_2 = {"цена": [zena, zena_2, zena_3]}
+dict_3 = {"количество": [kolichestvo, kolichestvo_2, kolichestvo_3]}
+
+list_ed_izm = [edin_izmereniya, edin_izmereniya_2, edin_izmereniya_3]
+
+list_dublicat = []
+for i in list_ed_izm:
+ if i not in list_dublicat:
+  list_dublicat.append(i)
+
+dict_4 = {"eд": list_dublicat}
+
+
+dict.update(dict_1)
+dict.update(dict_2)
+dict.update(dict_3)
+dict.update(dict_4)
+
+print(dict)
