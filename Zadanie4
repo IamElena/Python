@@ -1,0 +1,20 @@
+
+stroka = input('Введите строку')
+
+# i = 0
+
+n = stroka.split()
+
+# for item in n:
+#     i += 1
+#     print(i, item)
+#
+# if len("stroka") > 10:
+#     print()
+
+for i, el in enumerate(n, 1):
+
+    if len(el) > 10:
+        el = el[0:10]
+
+    print(f"{i}. {el}")

@@ -1,0 +1,13 @@
+
+natural_numbers = [1,28,4,94,22,9,4,5,45,7,67]
+
+#natural_numbers = [7, 5, 3, 3, 2]
+A = int(input('Введите натуральное число '))
+
+list = [A]
+
+natural_numbers.extend(list)
+
+natural_numbers.sort(reverse = True)
+
+print(natural_numbers)
