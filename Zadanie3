@@ -1,0 +1,26 @@
+
+x = int(input('Введите первое число '))
+
+y = int(input('Введите второе число '))
+
+z = int(input('Введите третее число '))
+
+def my_func (x, y, z):
+
+    numbers = [x, y, z]
+
+    max_numbs = []
+
+    max_1 = max(numbers)
+
+    max_numbs.append(max_1)
+
+    numbers.remove(max_1)
+
+    max_2 = max(numbers)
+
+    max_numbs.append(max_2)
+
+    print(sum(max_numbs))
+
+my_func(x,y,z)
