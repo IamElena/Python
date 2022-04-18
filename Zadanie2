@@ -1,0 +1,17 @@
+name = input('Введите имя ')
+
+surname = input('Введите фамилию ')
+
+year = int(input('Введите год рождения '))
+
+city = input('Введите город проживания ')
+
+email = input('Введите свой адрес почты ')
+
+phone_number = input('Введите свой номер телефона ')
+
+def my_func (name, surname, year, city, email, telephone):
+
+     return ' '.join([name, surname, year, city, email, telephone])
+
+print(my_func(surname = surname, name = name, year = year, city = city, email = email, telephone = phone_number))

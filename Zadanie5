@@ -1,0 +1,30 @@
+def sum ():
+
+    summa = 0
+
+    ex = False
+
+    while ex == False:
+
+        number = input('Введите число или специальный символ для остановки ".": ').split()
+
+        result = 0
+
+        for el in range(len(number)):
+
+            if number[el] == '.':
+
+                ex = True
+
+                break
+
+            else:
+                result = result + int(number[el])
+
+        summa = summa + result
+
+        print(f'Сумма равна {summa}')
+
+    print(f'Итоговая сумма равна {summa}')
+
+sum()
