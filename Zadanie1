@@ -1,0 +1,13 @@
+def zarplata():
+
+    hours = float(input('Введите количество отработанных часов : '))
+
+    stavka = float(input('Введите ставку за 1 час : '))
+
+    premiya = float(input('Введите размер премии: '))
+
+    osnov_zarplata = hours * stavka
+
+    return osnov_zarplata + premiya
+
+print(f'Размер заработной платы составит: {zarplata() }')
