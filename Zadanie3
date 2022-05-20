@@ -1,0 +1,20 @@
+
+with open('oklad.txt', 'r') as f_obj:
+
+    workers = {}
+
+    list = []
+
+    for i in f_obj:
+
+        key, value = i.split()
+
+        workers[key] = value
+
+        list.append(int(value))
+
+        if int(value) < 20000:
+
+            print(f'{key}: оклад меньше 20000')
+
+print(sum(list))

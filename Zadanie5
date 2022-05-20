@@ -1,0 +1,19 @@
+
+def summa():
+
+    try:
+        with open('my_file5.txt', 'w+') as f_obj:
+
+            line = input('Введите числа через пробел: ')
+
+            f_obj.writelines(line)
+
+            numbers = line.split()
+
+            print(sum(map(int, numbers)))
+
+    except ValueError:
+
+        print('Неверно задано число, впишите целое число')
+
+summa()
