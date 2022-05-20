@@ -1,0 +1,30 @@
+
+file = open('my_file2.txt', 'r')
+
+content = file.read()
+
+print(f'Содержимое файла: \n {content}')
+
+file = open('my_file2.txt', 'r')
+
+content = file.readlines()
+
+print(f'Количество строк в файле - {len(content)}')
+
+file = open('my_file2.txt', 'r')
+
+content = file.readlines()
+
+for i in range(len(content)):
+
+    print(f'Количество символов {i + 1} - ой строки {len(content[i])-1}')
+
+file = open('my_file2.txt', 'r')
+
+content = file.read()
+
+content = content.split()
+
+print(f'Общее количество слов - {len(content)}')
+
+file.close()
