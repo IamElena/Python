@@ -1,0 +1,47 @@
+
+with open('my_file4.txt') as file_in:
+
+    text = file_in.read()
+
+text = text.replace("One", "Один")
+
+
+with open("new_file4.txt", "w") as file_out:
+
+    file_out.write(text)
+
+
+
+with open('new_file4.txt') as file_in:
+
+    text2 = file_in.read()
+
+text2 = text.replace("Two", "Два")
+
+with open("my_file4.txt", "w") as file_out:
+
+    file_out.write(text2)
+
+
+
+with open('my_file4.txt') as file_in:
+
+    text3 = file_in.read()
+
+text3 = text.replace("Three", "Три")
+
+with open("new_file4.txt", "w") as file_out:
+
+    file_out.write(text3)
+
+
+
+with open('new_file4.txt') as file_in:
+
+    text4 = file_in.read()
+
+text4 = text.replace("Four", "Четыре")
+
+with open("my_file4.txt", "w") as file_out:
+
+    file_out.write(text4)
