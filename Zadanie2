@@ -1,0 +1,28 @@
+
+class Road:
+
+    def __init__(self, road_length, road_width):
+
+        self._length = road_length
+
+        self._width = road_width
+
+    def weight(self):
+
+        return self._length * self._width * self.mass * self.depth / 1000
+
+
+class WeightCount(Road):
+
+    def __init__(self, _length, _width, mass, depth):
+
+        super().__init__(_length, _width)
+
+        self.mass = mass
+
+        self.depth = depth
+
+
+r = WeightCount(20, 5000, 25, 0.05)
+
+print(r.weight(), 'тонн')
